@@ -1,0 +1,19 @@
+---
+import type {CollectionEntry} from 'astro:content'
+
+type Props = {
+    post: CollectionEntry<"posts">
+}
+
+const {post} = Astro.props
+
+const { author, description, image, date , title } = post.data
+
+---
+
+<article class="post-card">
+    <img src={image} alt={title} />
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <p>{date}</p>
+</article>

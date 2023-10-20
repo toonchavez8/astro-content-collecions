@@ -1,0 +1,10 @@
+name: "Miguel Chavez"
+avatar: "https://picsum.photos/id/29/200/300"
+bio: "A passionate member of our team."
+email: "miguel@example.com"
+social:
+  twitter: "miguel_twitter"
+  github: "miguel_github"
+  linkedin: "miguel_linkedin"
+  website: "https://miguel-website.com"
+role: "Software"
