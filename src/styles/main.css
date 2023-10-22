@@ -18,6 +18,8 @@ h4 {
 .content-wrapper {
 	display: grid;
 	gap: var(--size-fluid-1);
+	max-width: 75vw;
+	margin: 0 auto;
 }
 
 .meta {
@@ -72,11 +74,6 @@ h4 {
 	gap: var(--size-fluid-1);
 	align-items: start;
 	max-width: 600px;
-
-	> div {
-		display: grid;
-		gap: var(--size-1);
-	}
 }
 
 .btn {
@@ -99,4 +96,27 @@ h4 {
 	&:focus-visible {
 		box-shadow: 0 0 0 2px var(--blue-0), 0 0 0 7px var(--blue-4);
 	}
+}
+
+.authorFormat {
+	display: flex;
+	align-items: center;
+	gap: var(--size-fluid-1);
+}
+
+.avatar {
+	border-radius: 100vmax;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 32px;
+	height: 32px;
+}
+
+.image {
+	max-width: 100%;
+	height: auto;
+	border-radius: var(--radius-2);
+}
+.centerd {
+	text-align: center;
 }

@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import {getCollection} from 'astro:content'
+import PostCard from '../../components/PostCard.astro'
+
+const posts = await getCollection('posts')
+---
+
+<BaseLayout>
+    <div class="post-wrapper">
+        <h1>Posts</h1>
+        <div class="">
+            {
+                posts.map(post => <PostCard post={post} hide={[]} />)
+            }
+        </div>
+    </div>
+    </BaseLayout>

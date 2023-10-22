@@ -1,19 +1,38 @@
 ---
-import type {CollectionEntry} from 'astro:content'
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 type Props = {
-    post: CollectionEntry<"posts">
-}
+    post: CollectionEntry<"posts">;
+    hide: Array<string>;
+};
 
-const {post} = Astro.props
+const { post, hide } = Astro.props;
 
-const { author, description, image, date , title } = post.data
+const { author, description, image, date, title } = post.data;
 
+const { data: authorData } = await getEntry('team', author.id);
+
+
+const shouldHideImage = hide.includes('image');
+const shouldHideAuthor =hide.includes('author');
 ---
-
 <article class="post-card">
-    <img src={image} alt={title} />
+    {!shouldHideImage && (
+        <img src={image} alt={title} />
+    )}
     <h3>{title}</h3>
+    <div class="authorFormat">
+        {!shouldHideAuthor && (
+            <img src={authorData.avatar} alt={authorData.name} class="avatar" />
+            <p>{authorData.name}</p>
+            <span>-</span>
+            <time datetime={date.toISOString()}>{
+                date.toLocaleDateString(undefined, { dateStyle: 'medium', timeZone: 'UTC' })
+            }</time>
+            )}
+    </div>
     <p>{description}</p>
-    <p>{date}</p>
+
+    <a href={`/posts/${post.slug}`} class="btn">Read More</a>
 </article>

@@ -3,7 +3,7 @@ title: "5 Obscure Things in JavaScript"
 description: "Explore lesser-known, quirky aspects of JavaScript that can surprise even experienced developers."
 date: 2023-10-20
 tags: ['JavaScript', 'Programming', 'Development']
-image: https://picsum.photos/id/6/600/200
+image: https://oracle-devrel.github.io/devo-image-repository/seo-thumbnails/JavaScript---Thumbnail-1200-x-630.jpg
 relatedPosts: ["post-01", "post-02"]
 author: miguel-chavez
 ---

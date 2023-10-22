@@ -13,16 +13,16 @@ export const collections = {
 			date: z.date(),
 			tags: z.array(z.string()),
 			image: z.string().optional(),
-			author: reference("team").optional(),
+			author: reference("team"),
 			relatedPosts: z.array(reference("posts")).optional(),
 		}),
 	}),
 	team: defineCollection({
-		type: "content", // v2.5.0 and later
+		type: "data", // v2.5.0 and later
 		schema: ({ image }) =>
 			z.object({
 				name: z.string(),
-				avatar: image(),
+				avatar: z.string(),
 				bio: z.string().optional(),
 				email: z.string().optional(),
 				social: z

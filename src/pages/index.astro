@@ -10,11 +10,11 @@ import PostCard from '../components/PostCard.astro'
 			<h1> Content collection Overview</h1>
 		</section>
 
-		<section>
+		<section class="post-wrapper">
 			<h2>posts</h2>
 			<div>
 				{posts.map((post)=> (
-					<PostCard  key={post.slug} post={post} />
+					<PostCard post={post} hide={[]}/>
 				))}
 			</div>
 		</section>

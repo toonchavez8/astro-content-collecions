@@ -3,9 +3,9 @@ title: Essential Shorthand JavaScript Operations
 description: Master these shorthand techniques in JavaScript to write cleaner and more concise code
 date: 2023-10-20
 tags: ['JavaScript', 'Programming', 'Development']
-image: https://picsum.photos/id/6/600/200
+image: https://oracle-devrel.github.io/devo-image-repository/seo-thumbnails/JavaScript---Thumbnail-1200-x-630.jpg
 relatedPosts: ["post-02"]
-author: miguel-chavez
+author: cristy-uribe
 ---
 
 Efficiency and readability are key in JavaScript development. These shorthand operations help you write concise and elegant code:

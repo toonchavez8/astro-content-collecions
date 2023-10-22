@@ -5,7 +5,7 @@ date: 2023-10-20
 tags: ['Astro.js', 'Web Development', 'Framework']
 image: https://www.datocms-assets.com/48401/1638296498-astro-banner.jpeg?dpr=0.75&fit=max&fm=webp&w=900
 relatedPosts: ["post-02"]
-author: miguel-chavez
+author: cristy-uribe
 ---
 
 Astro.js is a cutting-edge web development framework that's changing the way we build modern websites. If you're curious about what sets Astro.js apart, here are five key things to know:
